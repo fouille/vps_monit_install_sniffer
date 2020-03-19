@@ -12,6 +12,7 @@ rm install-script.sh
 wget -P etc/ https://raw.githubusercontent.com/fouille/vps_monit_install_sniffer/master/voipservices.conf
 wget -P etc/init.d https://raw.githubusercontent.com/fouille/vps_monit_install_sniffer/master/etc/init.d/voipservices
 wget https://raw.githubusercontent.com/fouille/vps_monit_install_sniffer/master/install-script.sh
+chmod +x install-script.sh
 rm etc/voipmonitor.conf
 rm etc/init.d/voipmonitor
 echo "######## Run"
