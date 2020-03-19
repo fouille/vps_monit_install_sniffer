@@ -17,4 +17,5 @@ rm etc/voipmonitor.conf
 rm etc/init.d/voipmonitor
 echo "######## Run"
 ./install-script.sh
+rm -rf /tmp/voipmonitor*
 echo "######## Finish"
