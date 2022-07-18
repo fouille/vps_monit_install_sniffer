@@ -3,9 +3,9 @@
 echo "######## run to /tmp"
 cd /tmp/
 echo "######## Download sniffer"
-wget https://www.voipmonitor.org/current-stable-sniffer-static-64bit.tar.gz --content-disposition --no-check-certificate
+wget -O stable-sniffer-static-64bit.tar.gz https://www.voipmonitor.org/current-stable-sniffer-static-64bit.tar.gz --content-disposition --no-check-certificate
 echo "######## Decompress"
-tar xzf voipmonitor-*-static.tar.gz
+tar xzf stable-sniffer-static-64bit.tar.gz
 echo "######## Download voipservices conf"
 cd voipmonitor-*-static/
 rm install-script.sh
