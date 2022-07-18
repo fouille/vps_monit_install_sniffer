@@ -18,5 +18,6 @@ rm etc/voipmonitor.conf
 rm etc/init.d/voipmonitor
 echo "######## Run"
 ./install-script.sh
-rm -rf /tmp/voipmonitor*
+rm -rf /tmp/stable-sniffer-static-64bit.tar.gz
+rm -rf /tmp/install.sh
 echo "######## Finish"
