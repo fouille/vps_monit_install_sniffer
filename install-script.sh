@@ -110,32 +110,6 @@ else
 fi
 sed -i "s#^maxpooldays[\t= ]\+.*\$#maxpooldays = $MAXPOOLDAYS#" $CFGDIR/$SENSOR.conf
 
-# ask/set mysqlusername
-DEFMYSQLUSERNAME=default
-if [ -z $NOUSERINPUT ]; then
-        echo -n "Enter MYSQL username. [$MYSQLUSERNAME]: "
-        read TMPMYSQLUSERNAME
-fi
-if [ -z "$TMPMYSQLUSERNAME" ]; then
-        MYSQLUSERNAME=$DEFMYSQLUSERNAME
-else
-        MYSQLUSERNAME=$TMPMYSQLUSERNAME
-fi
-sed -i "s#^mysqlusername[\t= ]\+.*\$#mysqlusername = $MYSQLUSERNAME#" $CFGDIR/$SENSOR.conf
-
-# ask/set mysqlpassword
-DEFMYSQLPASSWORD=pass
-if [ -z $NOUSERINPUT ]; then
-        echo -n "Enter MYSQL password. [$MYSQLPASSWORD]: "
-        read TMPMYSQLPASSWORD
-fi
-if [ -z "$TMPMYSQLPASSWORD" ]; then
-        MYSQLPASSWORD=$DEFMYSQLPASSWORD
-else
-        MYSQLPASSWORD=$TMPMYSQLPASSWORD
-fi
-sed -i "s#^mysqlpassword[\t= ]\+.*\$#mysqlpassword = $MYSQLPASSWORD#" $CFGDIR/$SENSOR.conf
-
 # ask/set server_password
 DEFSERVERPASSWORD=pass
 if [ -z $NOUSERINPUT ]; then
